@@ -1,0 +1,5 @@
+routes/web.php → routing
+app/Http/Controllers → logic
+app/Models → database
+resources/views → tampilan
+database/migrations → struktur tabel
