@@ -33,6 +33,6 @@
 
 </table>
 
-{{ $posts->link() }}
+{{ $posts->links() }}
 @endsection
 
