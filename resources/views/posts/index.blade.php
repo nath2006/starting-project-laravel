@@ -16,10 +16,10 @@
     @foreach ($posts as $post){
     <tr>
         <td>{{ $loop ->iteration }}</td>
-        <td>{{ $loop->title }}</td>
+        <td>{{ $post->title }}</td>
         <td>
-            <a href="{{ route('posts.edit') }}" class="btn btn-warning mb-3">Edit</a>
-            <form action="{{ route('posts.destroy') }}" method="POST" class="d-inline"
+            <a href="{{ route('posts.edit', $post) }}" class="btn btn-warning mb-3">Edit</a>
+            <form action="{{ route('posts.destroy', $post) }}" method="POST" class="d-inline"
                   onsubmit="return confirm('Yakin mau hapus postingan ini?')"
             >
             @csrf
